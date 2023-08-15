@@ -3,6 +3,7 @@
 import React, {useState} from 'react'
 import {PrintText} from '../utils/PrintText'
 import {useZustand} from '../../store/useZustand'
+import {PrintImages} from '../utils/PrintImages'
 
 
 export const Slide1 = () => {
@@ -22,8 +23,13 @@ export const Slide1 = () => {
         />
       }
       {displayIndex >= 1 &&
-        <PrintText
-          text={'TODO'}
+        <PrintImages
+          urlArr={[
+            'images/item1.png',
+            'images/item2.png',
+            'images/item3.png',
+            'images/item4.png',
+          ]}
           callback={nextDisplayIndex}
         />
       }
