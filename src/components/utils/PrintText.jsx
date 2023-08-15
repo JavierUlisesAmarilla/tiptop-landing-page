@@ -1,17 +1,20 @@
 import React, {useState, useEffect} from 'react'
 
 
-export const PrintText = ({text, delay = 50, callback}) => {
+let printText
+
+
+export const PrintText = ({text, delay = 5, callback}) => {
   const [displayText, setDisplayText] = useState('')
 
   const animateText = () => {
     let index = 0
 
     const intervalId = setInterval(() => {
-      setDisplayText((prevText) => prevText + (text[index] || ''))
+      setDisplayText((prevText) => prevText + (printText[index] || ''))
       index++
 
-      if (index >= text.length) {
+      if (index >= printText.length) {
         clearInterval(intervalId)
 
         if (callback) {
@@ -22,6 +25,7 @@ export const PrintText = ({text, delay = 50, callback}) => {
   }
 
   useEffect(() => {
+    printText = text.substring(0, 2) + text[1] + text.substring(2)
     animateText()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])

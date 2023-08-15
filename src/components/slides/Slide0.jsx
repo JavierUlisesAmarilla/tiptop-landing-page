@@ -1,9 +1,13 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, {useState} from 'react'
 import {PrintText} from '../utils/PrintText'
+import {useZustand} from '../../store/useZustand'
 
 
 export const Slide0 = () => {
   const [displayIndex, setDisplayIndex] = useState(0)
+  const {slideIndex, setSlideIndex} = useZustand()
 
 
   return (
@@ -21,7 +25,12 @@ export const Slide0 = () => {
         />
       }
       {displayIndex >= 2 &&
-        <div className='px-10 py-2 bg-blue-400 rounded-full cursor-pointer w-min'>Yes</div>
+        <div
+          className='px-10 py-2 bg-blue-400 rounded-full cursor-pointer w-min'
+          onClick={() => setSlideIndex(slideIndex + 1)}
+        >
+          Yes
+        </div>
       }
     </div>
   )
