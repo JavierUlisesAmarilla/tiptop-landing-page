@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import classnames from 'classnames'
 
 
-export const PrintImages = ({urlArr, delay = 200, callback}) => {
+export const PrintImages = ({urlArr, delay = 500, callback}) => {
   const [displayImgIndex, setDisplayImgIndex] = useState(0)
 
   const animateImages = () => {
@@ -23,7 +23,7 @@ export const PrintImages = ({urlArr, delay = 200, callback}) => {
   }, [])
 
   useEffect(() => {
-    if (displayImgIndex >= urlArr.length - 1 && callback) {
+    if (displayImgIndex >= urlArr.length && callback) {
       callback()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
