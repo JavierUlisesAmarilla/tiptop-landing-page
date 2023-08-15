@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import classnames from 'classnames'
 
 
-export const PrintImages = ({urlArr, delay = 500, callback}) => {
+export const PrintImages = ({urlArr, delay = 50, callback}) => {
   const [displayImgIndex, setDisplayImgIndex] = useState(0)
 
   const animateImages = () => {

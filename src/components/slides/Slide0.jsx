@@ -14,7 +14,7 @@ export const Slide0 = () => {
   }
 
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col w-full max-w-lg gap-4 p-4'>
       {displayIndex >= 0 &&
         <PrintText
           text={'Buying stuff is easy, selling it is hard. But maybe there is a world where you don\'t have to sell things any longer?'}

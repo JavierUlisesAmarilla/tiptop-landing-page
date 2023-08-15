@@ -15,7 +15,7 @@ export const Slide1 = () => {
   }
 
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col w-full max-w-lg gap-4'>
       {displayIndex >= 0 &&
         <PrintText
           text={'TipTop finds the things you own in your past Amazon purchases or your receipts and magically creates instant cash offers for you.'}

@@ -20,7 +20,7 @@ export const Slide2 = () => {
   }, [displayIndex])
 
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col w-full max-w-lg gap-4'>
       {displayIndex >= 0 &&
         <PrintText
           text={'Please enter your phone number below to join our waitlist.'}
