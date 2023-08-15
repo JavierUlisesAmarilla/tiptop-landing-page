@@ -18,7 +18,7 @@ export const Slider = () => {
   const {slideIndex} = useZustand()
 
   return (
-    <div className='w-full max-w-xl p-4'>
+    <div className='w-full max-w-lg p-4'>
       {slideArr[slideIndex]}
     </div>
   )

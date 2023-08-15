@@ -29,7 +29,7 @@ export const Slide0 = () => {
       }
       {displayIndex >= 2 &&
         <div
-          className='px-10 py-2 bg-blue-400 rounded-full cursor-pointer w-min'
+          className='px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30 w-min'
           onClick={nextSlideIndex}
         >
           Yes

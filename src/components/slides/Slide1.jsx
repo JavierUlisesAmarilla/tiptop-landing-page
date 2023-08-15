@@ -35,7 +35,7 @@ export const Slide1 = () => {
       }
       {displayIndex >= 3 &&
         <div
-          className='flex items-center justify-center w-48 px-10 py-2 bg-blue-400 rounded-full cursor-pointer'
+          className='flex items-center justify-center w-48 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
           onClick={nextSlideIndex}
         >
           Join waitlist

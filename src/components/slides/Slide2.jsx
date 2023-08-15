@@ -29,7 +29,7 @@ export const Slide2 = () => {
       }
       {displayIndex >= 1 &&
         <input
-          className='px-4 py-2 bg-blue-400 rounded-full'
+          className='px-4 py-2 bg-blue-400 rounded-full bg-opacity-30'
           type='tel'
           placeholder='Phone number'
           value={'(123) 456 - 7890'}
@@ -40,7 +40,7 @@ export const Slide2 = () => {
       }
       {displayIndex >= 2 &&
         <div
-          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer'
+          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
           onClick={nextDisplayIndex}
         >
           Next
@@ -54,14 +54,17 @@ export const Slide2 = () => {
       }
       {displayIndex >= 4 &&
         <input
-          className='px-4 py-2 bg-blue-400 rounded-full'
+          className='px-4 py-2 bg-blue-400 rounded-full bg-opacity-30'
           placeholder='Code'
           value={'123456'}
+          onChange={() => {
+            //
+          }}
         />
       }
       {displayIndex >= 5 &&
         <div
-          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer'
+          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
           onClick={nextDisplayIndex}
         >
           Next
@@ -75,14 +78,17 @@ export const Slide2 = () => {
       }
       {displayIndex >= 7 &&
         <input
-          className='px-4 py-2 bg-blue-400 rounded-full'
+          className='px-4 py-2 bg-blue-400 rounded-full bg-opacity-30'
           placeholder='Name'
           value={'Zeus'}
+          onChange={() => {
+            //
+          }}
         />
       }
       {displayIndex >= 8 &&
         <div
-          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer'
+          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
           onClick={nextSlideIndex}
         >
           Next
