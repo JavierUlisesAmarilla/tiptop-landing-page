@@ -16,7 +16,7 @@ export const Slide2 = () => {
 
   const animNextSlide = () => {
     gsap.timeline()
-        .to('.slide2', {
+        .to('.Slide2', {
           top: '-100%',
           opacity: 0,
           duration: 0.5,
@@ -33,7 +33,7 @@ export const Slide2 = () => {
   }, [displayIndex])
 
   return (
-    <div className='relative flex flex-col w-full max-w-lg gap-4 slide2'>
+    <div className='relative flex flex-col w-full max-w-lg gap-4 Slide2'>
       {displayIndex >= 0 &&
         <PrintText
           text={'Please enter your phone number below to join our waitlist.'}

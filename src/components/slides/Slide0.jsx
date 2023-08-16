@@ -16,7 +16,7 @@ export const Slide0 = () => {
 
   const animNextSlide = () => {
     gsap.timeline()
-        .to('.slide0', {
+        .to('.Slide0', {
           top: '-100%',
           opacity: 0,
           duration: 0.5,
@@ -27,7 +27,7 @@ export const Slide0 = () => {
   }
 
   return (
-    <div className='relative flex flex-col w-full max-w-lg gap-4 p-4 slide0'>
+    <div className='relative flex flex-col w-full max-w-lg gap-4 p-4 Slide0'>
       {displayIndex >= 0 &&
         <PrintText
           text={'Buying stuff is easy, selling it is hard. But maybe there is a world where you don\'t have to sell things any longer?'}

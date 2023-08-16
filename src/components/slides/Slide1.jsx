@@ -17,7 +17,7 @@ export const Slide1 = () => {
 
   const animNextSlide = () => {
     gsap.timeline()
-        .to('.slide1', {
+        .to('.Slide1', {
           top: '-100%',
           opacity: 0,
           duration: 0.5,
@@ -28,7 +28,7 @@ export const Slide1 = () => {
   }
 
   return (
-    <div className='relative flex flex-col w-full max-w-lg gap-4 slide1'>
+    <div className='relative flex flex-col w-full max-w-lg gap-4 Slide1'>
       {displayIndex >= 0 &&
         <PrintText
           text={'TipTop finds the things you own in your past Amazon purchases or your receipts and magically creates instant cash offers for you.'}

@@ -6,7 +6,7 @@ import {Slider} from './components/Slider'
 
 export const App = () => {
   return (
-    <div className='flex flex-col items-center justify-between w-full h-full font-semibold text-white bg-blue-600'>
+    <div className='flex flex-col items-center justify-between w-full h-full font-semibold text-white App'>
       <Header/>
       <Slider/>
       <Footer/>
