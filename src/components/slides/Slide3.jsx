@@ -10,7 +10,7 @@ export const Slide3 = () => {
   }
 
   return (
-    <div className='flex flex-col w-full max-w-lg gap-4'>
+    <div className='flex flex-col w-full max-w-xl gap-6'>
       {displayIndex >= 0 &&
         <PrintText
           text={'Thank you!'}

@@ -27,7 +27,7 @@ export const Slide0 = () => {
   }
 
   return (
-    <div className='relative flex flex-col w-full max-w-lg gap-4 p-4 Slide0'>
+    <div className='relative flex flex-col w-full max-w-xl gap-6 p-4 Slide0'>
       {displayIndex >= 0 &&
         <PrintText
           text={'Buying stuff is easy, selling it is hard. But maybe there is a world where you don\'t have to sell things any longer?'}
@@ -42,7 +42,7 @@ export const Slide0 = () => {
       }
       {displayIndex >= 2 &&
         <div
-          className='px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30 w-min'
+          className='px-10 py-2 bg-gray-100 rounded-full cursor-pointer bg-opacity-10 w-min hover:bg-opacity-20'
           onClick={animNextSlide}
         >
           Yes

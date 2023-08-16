@@ -33,7 +33,7 @@ export const Slide2 = () => {
   }, [displayIndex])
 
   return (
-    <div className='relative flex flex-col w-full max-w-lg gap-4 Slide2'>
+    <div className='relative flex flex-col w-full max-w-xl gap-6 Slide2'>
       {displayIndex >= 0 &&
         <PrintText
           text={'Please enter your phone number below to join our waitlist.'}
@@ -42,7 +42,7 @@ export const Slide2 = () => {
       }
       {displayIndex >= 1 &&
         <input
-          className='px-4 py-2 bg-blue-400 rounded-full bg-opacity-30'
+          className='px-4 py-2 bg-gray-100 border-none rounded-full outline-none bg-opacity-10 hover:bg-opacity-20'
           type='tel'
           placeholder='Phone number'
           value={'(123) 456 - 7890'}
@@ -53,7 +53,7 @@ export const Slide2 = () => {
       }
       {displayIndex >= 2 &&
         <div
-          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
+          className='flex items-center justify-center w-24 px-10 py-2 bg-gray-100 rounded-full cursor-pointer bg-opacity-10 hover:bg-opacity-20'
           onClick={nextDisplayIndex}
         >
           Next
@@ -67,7 +67,7 @@ export const Slide2 = () => {
       }
       {displayIndex >= 4 &&
         <input
-          className='px-4 py-2 bg-blue-400 rounded-full bg-opacity-30'
+          className='px-4 py-2 bg-gray-100 border-none rounded-full outline-none bg-opacity-10 hover:bg-opacity-20'
           placeholder='Code'
           value={'123456'}
           onChange={() => {
@@ -77,7 +77,7 @@ export const Slide2 = () => {
       }
       {displayIndex >= 5 &&
         <div
-          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
+          className='flex items-center justify-center w-24 px-10 py-2 bg-gray-100 rounded-full cursor-pointer bg-opacity-10 hover:bg-opacity-20'
           onClick={nextDisplayIndex}
         >
           Next
@@ -91,7 +91,7 @@ export const Slide2 = () => {
       }
       {displayIndex >= 7 &&
         <input
-          className='px-4 py-2 bg-blue-400 rounded-full bg-opacity-30'
+          className='px-4 py-2 bg-gray-100 border-none rounded-full outline-none bg-opacity-10 hover:bg-opacity-20'
           placeholder='Name'
           value={'Zeus'}
           onChange={() => {
@@ -101,7 +101,7 @@ export const Slide2 = () => {
       }
       {displayIndex >= 8 &&
         <div
-          className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
+          className='flex items-center justify-center w-24 px-10 py-2 bg-gray-100 rounded-full cursor-pointer bg-opacity-10 hover:bg-opacity-20'
           onClick={animNextSlide}
         >
           Next

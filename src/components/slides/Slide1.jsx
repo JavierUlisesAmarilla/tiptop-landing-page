@@ -28,7 +28,7 @@ export const Slide1 = () => {
   }
 
   return (
-    <div className='relative flex flex-col w-full max-w-lg gap-4 Slide1'>
+    <div className='relative flex flex-col w-full max-w-xl gap-6 Slide1'>
       {displayIndex >= 0 &&
         <PrintText
           text={'TipTop finds the things you own in your past Amazon purchases or your receipts and magically creates instant cash offers for you.'}
@@ -54,7 +54,7 @@ export const Slide1 = () => {
       }
       {displayIndex >= 3 &&
         <div
-          className='flex items-center justify-center w-48 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
+          className='flex items-center justify-center w-48 px-10 py-2 bg-gray-100 rounded-full cursor-pointer bg-opacity-10 hover:bg-opacity-20'
           onClick={animNextSlide}
         >
           Join waitlist
