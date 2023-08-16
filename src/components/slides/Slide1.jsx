@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 import {PrintText} from '../utils/PrintText'
 import {useZustand} from '../../store/useZustand'
 import {PrintImages} from '../utils/PrintImages'
+import gsap from 'gsap'
 
 
 export const Slide1 = () => {
@@ -14,8 +15,20 @@ export const Slide1 = () => {
     setDisplayIndex(displayIndex + 1)
   }
 
+  const animNextSlide = () => {
+    gsap.timeline()
+        .to('.slide1', {
+          top: '-100%',
+          opacity: 0,
+          duration: 0.5,
+          onComplete: () => {
+            nextSlideIndex()
+          },
+        })
+  }
+
   return (
-    <div className='flex flex-col w-full max-w-lg gap-4'>
+    <div className='relative flex flex-col w-full max-w-lg gap-4 slide1'>
       {displayIndex >= 0 &&
         <PrintText
           text={'TipTop finds the things you own in your past Amazon purchases or your receipts and magically creates instant cash offers for you.'}
@@ -42,7 +55,7 @@ export const Slide1 = () => {
       {displayIndex >= 3 &&
         <div
           className='flex items-center justify-center w-48 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
-          onClick={nextSlideIndex}
+          onClick={animNextSlide}
         >
           Join waitlist
         </div>

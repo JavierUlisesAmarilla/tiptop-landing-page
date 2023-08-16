@@ -3,6 +3,7 @@
 import React, {useEffect, useState} from 'react'
 import {PrintText} from '../utils/PrintText'
 import {useZustand} from '../../store/useZustand'
+import gsap from 'gsap'
 
 
 export const Slide2 = () => {
@@ -13,6 +14,18 @@ export const Slide2 = () => {
     setDisplayIndex(displayIndex + 1)
   }
 
+  const animNextSlide = () => {
+    gsap.timeline()
+        .to('.slide2', {
+          top: '-100%',
+          opacity: 0,
+          duration: 0.5,
+          onComplete: () => {
+            nextSlideIndex()
+          },
+        })
+  }
+
   useEffect(() => {
     if (displayIndex === 1 || displayIndex === 4 || displayIndex === 7) {
       setDisplayIndex(displayIndex + 1)
@@ -20,7 +33,7 @@ export const Slide2 = () => {
   }, [displayIndex])
 
   return (
-    <div className='flex flex-col w-full max-w-lg gap-4'>
+    <div className='relative flex flex-col w-full max-w-lg gap-4 slide2'>
       {displayIndex >= 0 &&
         <PrintText
           text={'Please enter your phone number below to join our waitlist.'}
@@ -89,7 +102,7 @@ export const Slide2 = () => {
       {displayIndex >= 8 &&
         <div
           className='flex items-center justify-center w-24 px-10 py-2 bg-blue-400 rounded-full cursor-pointer bg-opacity-30'
-          onClick={nextSlideIndex}
+          onClick={animNextSlide}
         >
           Next
         </div>
