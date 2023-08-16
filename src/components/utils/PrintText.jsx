@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react'
 let printText
 
 
-export const PrintText = ({text, delay = 5, callback}) => {
+export const PrintText = ({text, delay = 50, callback}) => {
   const [displayText, setDisplayText] = useState('')
 
   const animateText = () => {
