@@ -1,13 +1,13 @@
 {
-  "name": "landing-page",
-  "private": true,
+  "name": "tiptop-landing-page",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "prod": "node prod.server.cjs",
     "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite",
+    "preview": "vite preview",
+    "prod": "node prod.server.cjs"
   },
   "dependencies": {
     "classnames": "^2.3.2",
